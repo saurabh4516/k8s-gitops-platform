@@ -68,3 +68,5 @@ ingress:
           pathType: Prefix
   tls: []
 
+imagePullSecrets:
+  - name: ecr-registry
