@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: 783722568260.dkr.ecr.ap-south-1.amazonaws.com/cloudcart-order-service
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
   tag: "metrics-v1"
 
 service:
