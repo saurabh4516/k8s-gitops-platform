@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: cloudcart-order-service
-  pullPolicy: IfNotPresent
+  repository: 783722568260.dkr.ecr.ap-south-1.amazonaws.com/cloudcart-order-service
+  pullPolicy: Always
   tag: "latest"
 
 service:
