@@ -3,7 +3,7 @@ replicaCount: 2
 image:
   repository: 783722568260.dkr.ecr.ap-south-1.amazonaws.com/cloudcart-product-service
   pullPolicy: IfNotPresent
-  tag: "metrics-v1"
+  tag: "v2"
 
 service:
   type: ClusterIP

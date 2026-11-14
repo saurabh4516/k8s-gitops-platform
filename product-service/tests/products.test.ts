@@ -19,7 +19,7 @@ describe('product-service API', () => {
 
     assert.equal(response.status, 200)
     assert.equal(Array.isArray(response.body.data), true)
-    assert.equal(response.body.data.length, 2)
+    assert.equal(response.body.data.length, 10)
   })
 
   it('returns a product by ID', async () => {
