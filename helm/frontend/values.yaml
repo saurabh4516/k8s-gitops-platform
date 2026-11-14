@@ -1,0 +1,31 @@
+replicaCount: 2
+
+image:
+  repository: 783722568260.dkr.ecr.ap-south-1.amazonaws.com/cloudcart-frontend
+  pullPolicy: IfNotPresent
+  tag: "v1"
+
+imagePullSecrets:
+  - name: ecr-registry
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+readinessProbe:
+  path: /
+  initialDelaySeconds: 5
+  periodSeconds: 10
+
+livenessProbe:
+  path: /
+  initialDelaySeconds: 15
+  periodSeconds: 20
